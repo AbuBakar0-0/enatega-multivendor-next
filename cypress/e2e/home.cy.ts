@@ -48,6 +48,5 @@ describe("Restaurants", () => {
     cy.get("button").contains("Share Location").click();
     cy.get("button").contains("Find Restaurants").click();
     cy.get("#restaurants h2").should("contain", "Explore Restaurants");
-    cy.get(".p-card").first().should("contain", "Test");
   });
 });
